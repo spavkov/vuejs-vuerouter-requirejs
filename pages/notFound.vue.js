@@ -1,29 +1,23 @@
-define(['/components/button-counter.vue.js', "text!/pages/home.tpl.html"], function(buttonCounter, tpl) {
+define([], function() {
 
   var data = {
   };
 
   var methods = {
       say:function(item){
-          alert(item);
+
       }
   };
 
   return {
       methods:methods,
-      template:tpl,
+      template:"<h1>404!</h1>",
       created: function() {
-          console.log('created home');
+          console.log('created 404');
       },
       data:function(){
           return data
       }
   };
 });
-
-
-
-
-
-
 

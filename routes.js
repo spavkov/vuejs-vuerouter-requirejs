@@ -1,4 +1,4 @@
-define(["resolveComponent"], function(ResolveComponent) {
+define(["resolveComponent", "appConfig"], function(ResolveComponent, appConfig) {
 
     var routes = [];
 
@@ -7,6 +7,10 @@ define(["resolveComponent"], function(ResolveComponent) {
         component: ResolveComponent("pages/home.vue")
     });
 
+    routes.push({
+        path: '/home',
+        component: ResolveComponent("pages/home.vue")
+    });
 
     routes.push({
         path: '/page2',
@@ -14,7 +18,11 @@ define(["resolveComponent"], function(ResolveComponent) {
     });
 
 
-
+    routes.push({
+        path: '*',
+        component: ResolveComponent("pages/notFound.vue")
+    });
+ 
     return routes;
 
 });

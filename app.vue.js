@@ -11,17 +11,14 @@ define(["vue","vue.router","routes"], function(Vue,VueRouter,routes) {
         routes:routes
     });
 
-    router.beforeEach(function (to, from, next) {
+/*     router.beforeEach(function (to, from, next) {
         console.log('navigation to ' + to + ' '+'from ' + from);
         next()
-    });
+    }); */
 
 
     var methods = {
-        switchPage:function(menu){
-            console.log(menu);
-            this.$router.push(menu.path);
-        }
+
     };
 
 

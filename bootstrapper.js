@@ -2,9 +2,10 @@
     requirejs.config({
         baseUrl: "../",
         paths:{
-            "promise":"/q",
+            "promise":"https://cdnjs.cloudflare.com/ajax/libs/q.js/0.9.2/q",
             "vue":"https://unpkg.com/vue/dist/vue",
-            "vue.router":"https://unpkg.com/vue-router/dist/vue-router"
+            "vue.router":"https://unpkg.com/vue-router/dist/vue-router",
+            "text":"https://cdnjs.cloudflare.com/ajax/libs/require-text/2.0.12/text"
         },
         waitSeconds: 15,
         map:{
@@ -25,8 +26,8 @@
 
         },
         callback:function(){
-
+            console.log('All deps loaded in App')
         },
-        deps:["vue","vue.router","promise","index"] 
+        deps:["vue","vue.router","promise", "app.vue"] 
     });
 })();
