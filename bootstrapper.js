@@ -5,7 +5,8 @@
             "promise":"https://cdnjs.cloudflare.com/ajax/libs/q.js/0.9.2/q",
             "vue":"https://unpkg.com/vue/dist/vue",
             "vue.router":"https://unpkg.com/vue-router/dist/vue-router",
-            "text":"https://cdnjs.cloudflare.com/ajax/libs/require-text/2.0.12/text"
+            "text":"https://cdnjs.cloudflare.com/ajax/libs/require-text/2.0.12/text",
+            "vuetify": "https://cdn.jsdelivr.net/npm/vuetify/dist/vuetify"
         },
         waitSeconds: 15,
         map:{

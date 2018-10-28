@@ -1,6 +1,7 @@
-define(["vue","vue.router","routes"], function(Vue,VueRouter,routes) {
+define(["vue","vue.router","routes", "vuetify"], function(Vue,VueRouter,routes,Vuetify) {
 
     Vue.use(VueRouter);
+    Vue.use(Vuetify);
 
     var data = {
 

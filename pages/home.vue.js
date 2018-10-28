@@ -1,11 +1,12 @@
 define(['/components/button-counter.vue.js', "text!/pages/home.tpl.html"], function(buttonCounter, tpl) {
 
   var data = {
+      buttonDisabled: true
   };
 
   var methods = {
-      say:function(item){
-          alert(item);
+      greet:function(){
+          alert('greet');
       }
   };
 

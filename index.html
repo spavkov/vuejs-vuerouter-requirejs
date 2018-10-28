@@ -2,17 +2,35 @@
 <html>
 <head lang="en">
     <meta charset="UTF-8">
+    <style>
+    [v-cloak] > * { display:none; }
+[v-cloak]::before { content: "loading..."; }
+    </style>
     <title>vue</title>
-
+    <meta charset="utf-8">
+    <meta content="width=device-width,initial-scale=1,minimal-ui" name="viewport">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,400italic|Material+Icons">
+    <link rel="stylesheet" href="https://unpkg.com/vue-material@beta/dist/vue-material.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/vue-material@beta/dist/theme/default.css">
+    <link href='https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons' rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/vuetify/dist/vuetify.min.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
+  
     <script src="https://unpkg.com/requirejs@2.3.5/require.js"></script>
     <script src="/bootstrapper.js"></script>
+    
+    
 </head>
 <body>
 
-    <div class="panel" id="app">
-        <router-link to="/">Home</router-link>
-        <router-link to="/page2">Page 2</router-link>
+    <div class="panel" id="app" v-cloak>
+        <v-app dark>
+            <v-tabs fixed-tabs>
+              <v-tab to="/">Home</v-tab>
+              <v-tab to="/page2">Page2</v-tab>
+            </v-tabs>
             <router-view></router-view>
+          </v-app>
     </div>
 </body>
 </html>
