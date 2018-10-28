@@ -4,12 +4,13 @@ define(["vue","text!/components/button-counter.tpl.html"], function(Vue, templat
   };
 
   var methods = {
-      say:function(item){
-          alert(item);
+      increaseCounter:function(){
+          this.count++;
       }
   };
 
   return Vue.component("button-counter", {
+    methods: methods,
     props: ['title', 'counterValue'],
     template: template,
     created: function() {
